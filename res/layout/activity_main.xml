@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/txtnome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="digite seu nome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtnome"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="digite seu login"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtsenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtlogin"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="digite sua senha"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtsenha"
+        android:layout_marginTop="27dp"
+        android:onClick="salvar"
+        android:text="Button" />
+
+</RelativeLayout>
